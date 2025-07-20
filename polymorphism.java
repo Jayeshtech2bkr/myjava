@@ -1,0 +1,31 @@
+
+class Student {
+    String name;
+    int age;
+
+    public void displayinfo(String name) {
+        System.out.println(name);
+
+    }
+
+    public void displayinfo(int age) {
+        System.out.println(age);
+    }
+
+    public void displayinfo(String name, int age) {
+        System.out.println(name);
+        System.out.println(age);
+    }
+}
+
+public class polymorphism {
+    public static void main(String[] args) {
+
+        Student s1 = new Student();
+        s1.name = "jayesh";
+        s1.age = 18;
+
+        s1.displayinfo(s1.name, s1.age);
+
+    }
+}
